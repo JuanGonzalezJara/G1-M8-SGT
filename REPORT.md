@@ -84,9 +84,13 @@ Este reporte señala los pasos realizados para l ejecucion del desafio y los pro
 ```
 module.exports = app;
 ```
-- 
+- "Checkout requires a valid repository URL", se resuelve agregando correctamente repositorio en jenkinsfile
 ```
-
+git branch: 'main', url: 'https://github.com/JuanGonzalezJara/G1-M8-SGT.git'
+```
+- "jest" no se reconoce como un comando interno o externo, se resuelve agregando las dependencias en package.json
+```
+npm i jest supertest -D
 ```
 
 ## Resultados
