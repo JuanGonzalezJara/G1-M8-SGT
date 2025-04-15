@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out code..'
-                git branch: 'main', url: ''
+                git branch: 'main', url: 'https://github.com/JuanGonzalezJara/G1-M8-SGT.git'
             }
         }
 
