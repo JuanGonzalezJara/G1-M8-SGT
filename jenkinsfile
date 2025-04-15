@@ -26,7 +26,7 @@ pipeline {
             steps {
                 echo 'Deploying the app..'
                 script {
-                    docker.build('G1-M8-SGT:latest') // Crea la imagen de Docker
+                    bat 'docker build -t g1-m8-sgt:latest .' // Crea la imagen de Docker
                 }
             }
         }

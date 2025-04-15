@@ -104,6 +104,10 @@ app.listen(PORT, () => console.log(`API is running on port ${PORT}`));
 
 *Eliminar app.listen de app.js
 ```
+- "No such property: docker for class: groovy.lang.Binding" Esto se genera al intentar buildear la imagen con el plugin de Docker con el comando docker.build sin estar este configurado, se resuelve cambiando el script por un bat que llame directamente a docker
+```
+bat 'docker build -t g1-m8-sgt:latest .'
+```
 
 ## Resultados
 
