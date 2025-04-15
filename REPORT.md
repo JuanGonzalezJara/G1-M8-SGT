@@ -92,6 +92,18 @@ git branch: 'main', url: 'https://github.com/JuanGonzalezJara/G1-M8-SGT.git'
 ```
 npm i jest supertest -D
 ```
+- "Jest did not exit one second after the test run has completed." Esto es debido a que queda el servidor corriendo al finalizar las pruebas, lo que no permite cerrar el stage, se resuleve cambiando la manera en como iniciamos el servidor, quitando el app.listen de app.js y dejando la llamada al servidor de manera independiente
+```
+* Crear archivo server.js
+const app = require('./app');
+const PORT = 3000;
+app.listen(PORT, () => console.log(`API is running on port ${PORT}`));
+
+* Modificar package.json
+"start": "node server.js",
+
+*Eliminar app.listen de app.js
+```
 
 ## Resultados
 
