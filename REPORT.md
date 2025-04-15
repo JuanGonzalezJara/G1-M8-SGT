@@ -112,9 +112,15 @@ bat 'docker build -t g1-m8-sgt:latest .'
 ## Resultados
 
 - Resultados de la ejecucion del Pipeline
-![foto1](agregar url img)
-- Resultados de la creacion y ejecucion de la imagen en Docker Desktop
-![foto2](agregar url img)
+![foto1](https://github.com/JuanGonzalezJara/G1-M8-SGT/blob/main/img/log_Jenkins.png?raw=true)
+- Resultados de la creacion de la imagen en Docker Desktop
+![foto2](https://github.com/JuanGonzalezJara/G1-M8-SGT/blob/main/img/Docker_IMG_OK.png?raw=true)
+- Imagen Docker running
+```
+docker run -d -p 3000:3000 --name task-api g1-m8-sgt:latest
+```
+![foto3](https://github.com/JuanGonzalezJara/G1-M8-SGT/blob/main/img/img_Running.png?raw=true)
 - Resultados de los endpoints funcionales
-![foto3](agregar url img)
+![foto4](https://github.com/JuanGonzalezJara/G1-M8-SGT/blob/main/img/endpoint_tasks.png?raw=true)
+![foto5](https://github.com/JuanGonzalezJara/G1-M8-SGT/blob/main/img/endpoint_tasks_1.png?raw=true)
 
